@@ -10,15 +10,15 @@
 
 <body>
     <script>
-        let num,total;
-        num = prompt("nhap so di");
-        total = 0;
+        let num = prompt("nhap so dieu kien,day khong phai so duoc cong,dieu kien = -1 ");
+        let total = 0;
         while (num != -1) {
-            num = prompt("Nhap tiep so di, -1 la so cuoi cung")
-            alert(num)
-            total += num
+            num = +prompt("nhap so ");
+            alert(num);
+            total += num;
         }
         document.write(total)
+
     </script>
 </body>
 
