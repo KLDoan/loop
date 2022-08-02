@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function reverse(num) {
+            let last_digit, reversed = 0, number = Math.abs(num);
+            while (number != 0) {
+                last_digit = number % 10;
+                reversed = reversed * 10 + last_digit;
+                number = Math.floor(number / 10);
+            }
+            if (num < 0) {
+                alert("Hay nhap so nguyen duong")
+            }
+            return reversed;
+        }
+
+        console.log(reverse(789));//hay nhap so vao day
+    </script>
+</body>
+
+</html>

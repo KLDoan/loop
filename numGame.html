@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guessing number </title>
     <style>
         html {
             font-family: Arial, Helvetica, sans-serif;
@@ -42,6 +42,10 @@
             while (user_num < ran_num || user_num > ran_num) {
                 alert("You guess it wrong");
                 user_num = +prompt("So ma ban doan la")
+                if (user_num > 2) {
+                    alert("You still guess it wrong :v ,play again");
+                    break;
+                }
             }
             while (user_num == ran_num) {
                 alert("Nice!!!!You get it")
